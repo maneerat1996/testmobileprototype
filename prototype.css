@@ -467,13 +467,33 @@ to {
 }
 
 @media (max-width: 500px){
+
+  body {
+    margin: 50px 50px 0px 15px;
+}
+  .container {
+    display: grid;
+    height: 30vh;
+    margin: 50px 0px 0px 0px;
+    grid-gap: -10px;
+    grid-template-areas: 
+    "b"
+  } 
+
+.boxA{
+    display: none;
+}
+
+.boxB{
+    grid-area: b;
+}
+
   .main{
       display: grid;    
       grid-template-areas: 
       "icon"
       "key"
       "btn"
-      margin: 0px 0px 0px -50px;
   }
 
   .header{
@@ -521,8 +541,8 @@ to {
   input {
       margin: 0;
       max-width: 100%; 
-      width: 350px;
-      height: 40px;
+      width: 333px;
+      height: 44px;
       font-size: 100%;
       border-color: #e6e6e6;
       border-radius: 10px; 
