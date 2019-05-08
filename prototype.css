@@ -54,6 +54,7 @@ input {
     border-color: #333;
     border-radius: 15px;
     padding: 1px;
+    text-indent: 15px;
   }
 
   .input2 {
@@ -90,7 +91,7 @@ input {
     display: grid;
     height: 30vh;
     margin: 50px 0px 0px 0px;
-    grid-gap: 20px;
+    grid-gap: -10px;
     grid-template-areas: 
     "a  b"
   } 
@@ -171,6 +172,7 @@ margin: 180px 0px 0px 0px;
   margin: -1px 0px 0px 0px;
 
 }
+
 
 
 .modal {
@@ -400,9 +402,11 @@ to {
       "key"
       "btn"
   }
+
 .headerM{
   display: none;
 }
+
   .input2 {
       margin: 0px 0px 0px 50px;
       max-width: 100%; 
@@ -432,27 +436,25 @@ to {
     .main{
         display: grid;    
         grid-template-areas: 
-      
         "icon"
         "key"
         "btn"
     }
-    /* input {
+
+    input {
         margin: 0;
         max-width: 100%; 
         width: 250px;
         height: 44px;
         font-size: 150%;
-        border-color: #333;
+        border-color: #e6e6e6;
         border-radius: 15px;
         padding: 1px;
-    } */
+    }
 
     .input2 {
         margin: 0px 0px 0px 75px;
         max-width: 100%; 
-        /* width: 250px;
-        height: 44px; */
         font-size: 120%;
         font-weight: bold;
         color: #8DC63F;
@@ -582,7 +584,6 @@ margin: 140px 0px 0px 0px;
   font-family: Assistant;
   text-align: center;
   margin: -1px 0px 0px 0px;
-
 }
 
 }

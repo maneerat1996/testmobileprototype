@@ -38,14 +38,12 @@ window.onclick = function(event) {
 }
 
 span2.onclick = function() {
-  // modal.style.display = "none";
   modal2.style.display = "none";
   console.log('t2');
   }
   
   window.onclick = function(event) {
       if (event.target == modal2) {
-      // modal.style.display = "none";
       modal2.style.display = "none";
       console.log('t3');
       }
@@ -54,8 +52,8 @@ span2.onclick = function() {
 btn.addEventListener('click', function(e) {
   e.preventDefault();
   var icons = [
-    document.querySelector('.svg-icon-success'),
-    document.querySelector('.svg-icon-error')
+    document.querySelector('.svg-icon-success')
+    // document.querySelector('.svg-icon-error')
   ];
   
   icons.forEach(function(el) {
@@ -63,5 +61,7 @@ btn.addEventListener('click', function(e) {
   setTimeout(function() {
     el.classList.add('is-animated');    
   }, 5);
+
+  console.log(el);
   });
 });
