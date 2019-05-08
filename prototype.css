@@ -473,6 +473,7 @@ to {
       "icon"
       "key"
       "btn"
+      margin: 0px 0px 0px -50px;
   }
 
   .header{
@@ -520,8 +521,8 @@ to {
   input {
       margin: 0;
       max-width: 100%; 
-      width: 440px;
-      height: 44px;
+      width: 350px;
+      height: 40px;
       font-size: 100%;
       border-color: #e6e6e6;
       border-radius: 10px; 
