@@ -1,8 +1,8 @@
-var modal = document.getElementById('myModal');
-var modal2 = document.getElementById('myModal2');
+var ModalLoading = document.getElementById('ModalLoading');
+var ModalSuccess = document.getElementById('ModalSuccess');
 var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-var span2 = document.getElementsByClassName("close2")[0];
+var closeLoading = document.getElementsByClassName("close")[0];
+var closeSuccess = document.getElementsByClassName("close2")[0];
 
 btn.onclick = function() {
     var username = document.getElementById("username").value;
@@ -12,37 +12,37 @@ btn.onclick = function() {
     alert('กรุณกรอกข้อมูลให้ครบ');
  }else{
     if(username=="01"){
-        modal.style.display = "block";
+        ModalLoading.style.display = "block";
         console.log('loading ..');
         return false;
     }else{
-        modal2.style.display = "block";
+        ModalSuccess.style.display = "block";
         console.log("[Username:"+ username + "] [Password:" + password +"]");
         return false;
       }
     }
 }
 
-span.onclick = function() {
-modal.style.display = "none";
-console.log('close pop-up page loading');
+closeLoading.onclick = function() {
+  ModalLoading.style.display = "none";
+  console.log('close pop-up page loading');
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-    modal.style.display = "none";
+    if (event.target == ModalLoading) {
+    ModalLoading.style.display = "none";
     console.log('outside load');
     }
 }
 
-span2.onclick = function() {
-  modal2.style.display = "none";
+closeSuccess.onclick = function() {
+  ModalSuccess.style.display = "none";
   console.log('close pop-up page success');
 }
   
 window.onclick = function(event) {
-    if (event.target == modal2) {
-    modal2.style.display = "none";
+    if (event.target == ModalSuccess) {
+    ModalSuccess.style.display = "none";
     console.log('outside success');
     }
 }
