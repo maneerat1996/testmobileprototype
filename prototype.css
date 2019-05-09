@@ -547,7 +547,7 @@ to {
 
 .textmember{
   text-align: left;
-  margin: 1px 0px 20px -10px;
+  margin: 1px 0px 20px -20px;
   font-family: Assistant;
   font-size: 37px
 }
@@ -563,7 +563,7 @@ to {
   }
 
   .input2 {
-      margin: 0px 0px 0px 75px;
+      margin: 0px 0px 0px 70px;
       max-width: 100%; 
       width: 200px;
       height: 44px;
