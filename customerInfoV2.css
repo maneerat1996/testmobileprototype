@@ -1,0 +1,691 @@
+.headerSub1 {
+    background: #363636;
+    grid-area: headerSub1;
+}
+
+.headerSub2 {
+    background: #363636;
+    grid-area: headerSub2;
+}
+
+.header {
+    display: grid;
+    width: auto;
+    height: 200px;
+    grid-template-areas: "headerSub1 headerSub1 headerSub1 headerSub1  headerSub2 headerSub2"
+}
+
+#backGround {
+    text-align: left;
+    position: absolute;
+    width: auto;
+    height: 200px;
+    /* src: url("png_graphic_1062071.png"); */
+}
+
+#logo {
+    width: 308px;
+    height: 111px;
+    text-align: left;
+    position: absolute;
+}
+
+#text1 {
+    color: #8dc63f;
+    grid-area: text1;
+    font-weight: bold;
+    width: 140px;
+}
+
+#text2 {
+    color: #ffffff;
+    font-weight: bold;
+    grid-area: text2;
+    width: 140px;
+    right: 0;
+}
+
+#textUser {
+    font-family: Assistant;
+    font-size: 20px;
+    color: #ffffff;
+    grid-area: textUser;
+    font-weight: bold;
+}
+
+#textBrowser {
+    font-family: Assistant;
+    font-size: 20px;
+    color: #ffffff;
+    grid-area: textBrowser;
+    font-weight: bold;
+}
+
+#textNetwork {
+    font-family: Assistant;
+    font-size: 20px;
+    color: #ffffff;
+    grid-area: textNetwork;
+    font-weight: bold;
+}
+
+.infoUser {
+    display: grid;
+    width: auto;
+    height: auto;
+    position: absolute;
+    color: #ffffff;
+    right: 0;
+    margin-top: 100px;
+    grid-template-areas: "text1 text2"
+}
+
+.containerPicture {
+    /* background-color: #8dc63f; */
+    grid-area: containerPicture;
+    width: 290px;
+    margin-left: 50px;
+}
+
+.containerInfo {
+    display: grid;
+    /* grid-gap: 10px 10px; */
+    /* background-color: #c6803f; */
+    grid-area: containerInfo;
+    grid-template-columns: auto auto auto;
+}
+
+.containerProfile {
+    display: grid;
+    grid-area: containerProfile;
+    grid-template-columns: auto auto;
+}
+
+.boxProfile1 {
+    display: grid;
+    width: 600px;
+    /* background-color: #363636; */
+    grid-template-areas: "boxProfile1Sub1 boxProfile1Sub2  boxProfile1Sub2";
+}
+
+.boxProfile1Sub1 {
+    grid-area: boxProfile1Sub1;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: -10px
+}
+
+.boxProfile1Sub2 {
+    grid-area: boxProfile1Sub2;
+    width: 400px;
+}
+
+.boxProfile2 {
+    display: grid;
+    width: 600px;
+    /* background-color: #b10606; */
+    grid-template-areas: "boxProfile2Sub1 boxProfile2Sub2";
+    margin-left: -300px;
+    margin-top: -10px;
+}
+
+.boxProfile2Sub1 {
+    grid-area: boxProfile2Sub1;
+    width: 120px;
+    margin-left: 20px;
+}
+
+.boxProfile2Sub2 {
+    grid-area: boxProfile2Sub2;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.container {
+    display: grid;
+    padding: 10px;
+    height: auto;
+    background-color: #f8f6f6;
+    grid-template-areas: "containerPicture textHead textHead textHead" "containerPicture containerInfo containerInfo containerInfo" "containerPicture textHead2 textHead2 textHead2" "containerPicture containerProfile containerProfile containerProfile";
+}
+
+.grid-item {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    width: 320px;
+    height: 170px;
+    background-color: #ffffff;
+    box-shadow: 3px 5px 3px 5px #a7a5a5;
+    display: grid;
+    grid-template-areas: "boxInfo1 boxInfo2";
+}
+
+.boxInfo1 {
+    /* background-color: #8dc63f; */
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.boxInfo2 {
+    /* background-color: #363636; */
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.img1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.h1 {
+    font-family: Assistant;
+    font-size: 30px;
+    /* text-align: left; */
+    color: #5d5e5b;
+}
+
+.textHead {
+    font-family: Assistant;
+    font-size: 20px;
+    /* text-align: left; */
+    color: #707070;
+    grid-area: textHead;
+    font-weight: bold;
+    height: 30px;
+}
+
+.textHead2 {
+    font-family: Assistant;
+    font-size: 20px;
+    /* text-align: left; */
+    color: #707070;
+    grid-area: textHead2;
+    font-weight: bold;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.header2 {
+    background-color: #000000;
+    height: 40px;
+    margin-top: -25px;
+}
+
+#textPhone {
+    font-family: Assistant;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: right;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#textNetwork2 {
+    font-family: Assistant;
+    font-size: 30px;
+    color: #ff722c;
+    font-weight: bold;
+    text-align: center;
+}
+
+#textBrowser2 {
+    font-family: Assistant;
+    font-size: 30px;
+    color: #77b3d4;
+    font-weight: bold;
+    text-align: center;
+}
+
+#textStatus2 {
+    font-family: Assistant;
+    font-size: 30px;
+    color: #52964b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.h2 {
+    font-family: Assistant;
+    font-size: 20px;
+    /* text-align: left; */
+    color: #8dc63f;
+    font-weight: bold;
+}
+
+.infoText {
+    font-family: Assistant;
+    font-size: 25px;
+    text-align: center;
+    color: #707070;
+    font-weight: bold;
+}
+
+#boxProfile {
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    font-family: Assistant;
+    color: #ffffff;
+    border-radius: 5px;
+    border: #707070;
+    background-color: #008292;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-indent: 10px;
+}
+
+.textProfile {
+    padding: 10px;
+}
+
+#Name {
+    width: 290px;
+    height: 45px;
+    font-size: 18px;
+    font-family: Assistant;
+    color: #707070;
+    border-radius: 5px;
+    border: #707070;
+    background-color: #e6e6e6;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#Mobile {
+    width: 290px;
+    height: 45px;
+    font-size: 18px;
+    font-family: Assistant;
+    color: #707070;
+    border-radius: 5px;
+    border: #707070;
+    background-color: #e6e6e6;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#IdCard {
+    width: 290px;
+    height: 45px;
+    font-size: 18px;
+    font-family: Assistant;
+    color: #707070;
+    border-radius: 5px;
+    border: #707070;
+    background-color: #e6e6e6;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#Birthday {
+    width: 290px;
+    height: 45px;
+    font-size: 18px;
+    font-family: Assistant;
+    color: #707070;
+    border-radius: 5px;
+    border: #707070;
+    background-color: #e6e6e6;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#EmailAddress {
+    width: 290px;
+    height: 45px;
+    font-size: 18px;
+    font-family: Assistant;
+    color: #707070;
+    border-radius: 5px;
+    border: #707070;
+    background-color: #e6e6e6;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#Address {
+    width: 290px;
+    height: 150px;
+    font-size: 18px;
+    font-family: Assistant;
+    color: #707070;
+    border-radius: 5px;
+    border: #707070;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#bottonSave {
+    width: 160px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fdfdfd;
+    border-color: #ffffff;
+    background-color: #32a432;
+    border-radius: 10px;
+    float: right;
+    margin-right: 100px;
+}
+
+#boxpicture {
+    width: 290px;
+    height: auto;
+    font-size: 20px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#PictureCustomer {
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#textCustomer {
+    width: 290px;
+    height: 45px;
+    font-size: 20px;
+    font-family: Assistant;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #008299;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-indent: 10px;
+}
+
+.Customer {
+    /* margin: 0px 0px 100px 0px; */
+    padding: 10px;
+}
+
+.textWhite {
+    width: 290px;
+    height: 45px;
+    font-size: 20px;
+    font-family: Assistant;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#boxVDO {
+    width: 290px;
+    height: 45px;
+    font-size: 20px;
+    font-family: Assistant;
+    font-weight: bold;
+    color: #363636;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    text-indent: 10px;
+}
+
+.textVDO {
+    /* margin-top: 20px;
+    margin-left: 20px; */
+    padding: 10px;
+}
+
+@media (max-width: 2000px) {
+    .grid-item {
+        border: 1px solid #ffffff;
+        padding: 10px;
+        width: 320px;
+        height: 170px;
+        background-color: #ffffff;
+        box-shadow: 3px 5px 3px 5px #a7a5a5;
+        display: grid;
+        grid-template-areas: "boxInfo1 boxInfo2";
+    }
+    .boxInfo1 {
+        /* background-color: #8dc63f; */
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+    #textNetwork2 {
+        font-family: Assistant;
+        font-size: 30px;
+        color: #ff722c;
+        font-weight: bold;
+        text-align: center;
+    }
+    #textBrowser2 {
+        font-family: Assistant;
+        font-size: 30px;
+        color: #77b3d4;
+        font-weight: bold;
+        text-align: center;
+    }
+    #textStatus2 {
+        font-family: Assistant;
+        font-size: 30px;
+        color: #52964b;
+        font-weight: bold;
+        text-align: center;
+    }
+    .boxProfile2 {
+        display: grid;
+        width: 600px;
+        /* background-color: #b10606; */
+        grid-template-areas: "boxProfile2Sub1 boxProfile2Sub2";
+        margin-left: -300px;
+        margin-top: -10px;
+    }
+    .boxProfile1Sub1 {
+        grid-area: boxProfile1Sub1;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: -10px
+    }
+    #boxpicture {
+        width: 290px;
+        height: auto;
+        font-size: 20px;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .textWhite {
+        width: 290px;
+        height: 45px;
+        font-size: 20px;
+        font-family: Assistant;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #textVDO {
+        width: 290px;
+        height: 45px;
+        font-size: 20px;
+        font-family: Assistant;
+        font-weight: bold;
+        color: #363636;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #textCustomer {
+        width: 290px;
+        height: 45px;
+        font-size: 20px;
+        font-family: Assistant;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #008299;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-indent: 10px;
+    }
+    .containerPicture {
+        /* background-color: #8dc63f; */
+        grid-area: containerPicture;
+        width: 290px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .grid-item {
+        border: 1px solid #ffffff;
+        padding: 10px;
+        width: 240px;
+        height: 150px;
+        background-color: #ffffff;
+        box-shadow: 3px 5px 3px 5px #a7a5a5;
+        display: grid;
+        grid-template-areas: "boxInfo1 boxInfo2";
+    }
+    #textNetwork2 {
+        font-family: Assistant;
+        font-size: 25px;
+        color: #ff722c;
+        font-weight: bold;
+        text-align: center;
+    }
+    #textBrowser2 {
+        font-family: Assistant;
+        font-size: 25px;
+        color: #77b3d4;
+        font-weight: bold;
+        text-align: center;
+    }
+    #textStatus2 {
+        font-family: Assistant;
+        font-size: 25px;
+        color: #52964b;
+        font-weight: bold;
+        text-align: center;
+    }
+    .boxProfile2 {
+        display: grid;
+        width: 500px;
+        /* background-color: #b10606; */
+        grid-template-areas: "boxProfile2Sub1 boxProfile2Sub2";
+        margin-left: -120px;
+        margin-top: -10px;
+    }
+    .boxProfile1Sub1 {
+        grid-area: boxProfile1Sub1;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: -9px
+    }
+    #boxpicture {
+        width: 250px;
+        height: auto;
+        font-size: 20px;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .textWhite {
+        width: 250px;
+        height: 45px;
+        font-size: 20px;
+        font-family: Assistant;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #textVDO {
+        width: 250px;
+        height: 45px;
+        font-size: 20px;
+        font-family: Assistant;
+        font-weight: bold;
+        color: #363636;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #textCustomer {
+        width: 250px;
+        height: 45px;
+        font-size: 20px;
+        font-family: Assistant;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #008299;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-indent: 10px;
+    }
+    .containerInfo {
+        display: grid;
+        width: 950px;
+        grid-area: containerInfo;
+        grid-template-columns: auto auto auto;
+    }
+    .containerPicture {
+        /* background-color: #8dc63f; */
+        grid-area: containerPicture;
+        width: 290px;
+        margin-left: 20px;
+    }
+    #boxVDO {
+        width: 250px;
+        height: 45px;
+        font-size: 20px;
+        font-family: Assistant;
+        font-weight: bold;
+        color: #363636;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        margin-top: -10px;
+        text-indent: 10px;
+    }
+    #Address {
+        width: 290px;
+        height: 150px;
+        font-size: 18px;
+        font-family: Assistant;
+        color: #707070;
+        border-radius: 5px;
+        border: #707070;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: -5px;
+    }
+    .boxProfile2Sub1 {
+        grid-area: boxProfile2Sub1;
+        width: 150px;
+        margin-left: 20px;
+    }
+    .boxProfile2Sub2 {
+        grid-area: boxProfile2Sub2;
+        width: 300px;
+        margin-top: 10px;
+    }
+    #bottonSave {
+        width: 160px;
+        height: 45px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fdfdfd;
+        border-color: #ffffff;
+        background-color: #32a432;
+        border-radius: 10px;
+        float: right;
+        margin-right: 14px;
+    }
+}

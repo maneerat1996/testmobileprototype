@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>customerStatus</title>
+    <link rel="stylesheet" href="customerStatus.css">
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Assistant');
+</style>
+
+<body>
+    <div class="header">
+        <div class="headerSub1">
+            <img src="/assets/image/logo AIS/png_graphic_1062071.png" id="backGround">
+            <img src="/assets/image/logo AIS/Advanc_logo.png" id="logo">
+        </div>
+        <div class="headerSub2">
+            <div class="infoUser">
+                <div id="detailCallcenter">
+                    <div class="Detail">USER : </div>
+                    <div class="Detail">BROWSER : </div>
+                    <div class="Detail">NETWORK : </div>
+                </div>
+                <div id="infoCallcenter">
+                    <div id="textUser"></div>
+                    <label id="textBrowser"></label>
+                    <div id="textNetwork">500 Mbps</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <!--status 1-->
+        <div class="grid-item">
+            <div class="containerSub">
+                <div class="tablePicture">
+                    <img id="img1" src="/assets/image/icon - Customer/MetroUI-Apps-Windows8-Photos-icon.png">
+                </div>
+                <div class="tableNameCustomer">
+                    <div id="NameCustomer">Customer 1</div>
+                </div>
+                <div class="tableBotton">
+                    <div id="boxOnline"></div>
+                    <div class="textOnline">Online</div>
+                    <!-- <input id="boxOnline" size="30" type="submit" value="Online"> -->
+                    <input id="bottonOnline" size="30" type="submit" value="Check" onclick="LinkCustomerVer1()">
+                </div>
+            </div>
+        </div>
+
+
+        <!--status 2-->
+        <div class="grid-item">
+            <div class="containerSub">
+                <div class="tablePicture">
+                    <img id="img1" src="/assets/image/icon - Customer/MetroUI-Apps-Windows8-Photos-icon.png">
+                </div>
+                <div class="tableNameCustomer">
+                    <div id="NameCustomer">Customer 2</div>
+                </div>
+                <div class="tableBotton">
+                    <div id="boxOnline"></div>
+                    <div class="textOnline">Online</div>
+                    <input id="bottonOnline" size="30" type="submit" value="Check" onclick="LinkCustomerVer1()">
+                </div>
+            </div>
+        </div>
+
+
+        <!--status 3-->
+        <div class="grid-item">
+            <div class="containerSub">
+                <div class="tablePicture">
+                    <img id="img1" src="/assets/image/icon - Customer/MetroUI-Apps-Windows8-Photos-icon.png">
+                </div>
+                <div class="tableNameCustomer">
+                    <div id="NameCustomer">Customer 3</div>
+                </div>
+                <div class="tableBotton">
+                    <div id="boxWating"></div>
+                    <div class="textWating">Offline</div>
+                    <!-- <input id="boxWating" size="30" type="submit" value="Waiting"> -->
+                    <input id="bottonWaiting" size="30" type="submit" value="Waiting" onclick="LinkCustomerVer2()">
+                </div>
+            </div>
+        </div>
+
+        <!--status 4-->
+        <div class="grid-item">
+            <div class="containerSub">
+                <div class="tablePicture">
+                    <img id="img1" src="/assets/image/icon - Customer/MetroUI-Apps-Windows8-Photos-icon.png">
+                </div>
+                <div class="tableNameCustomer">
+                    <div id="NameCustomer">Customer 4</div>
+                </div>
+                <div class="tableBotton">
+                    <div id="boxWating"></div>
+                    <div class="textWating">Offline</div>
+                    <input id="bottonWaiting" size="30" type="submit" value="Waiting" onclick="LinkCustomerVer2()">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+<script src="customerStatus.js"></script>
+
+</html>

@@ -230,9 +230,9 @@ input {
 .lds-ring {
   display: inline-block;
   position: relative;
-  width: 64px;
-  height: 64px;
-  margin: 60px 0px 0px 0px;
+  width: 100px;
+  height: 100px; /*64*/
+  margin: 150px 0px 0px 0px;
 }
 
 .lds-ring div {
@@ -241,7 +241,7 @@ input {
   position: absolute;
   width: 51px;
   height: 51px;
-  margin: 6px;
+  margin: 6px 0px 0px 20px;
   border: 6px solid rgb(0, 0, 0);
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -319,7 +319,7 @@ input {
   animation-name: bounceInDown;
   animation-duration: 0.8s;
   animation-fill-mode: both;
-  margin: 180px 0px 0px 10px;
+  margin: 150px 0px 0px 10px;
 }
 
 .svg-icon-success.is-animated .circle-check {
@@ -334,7 +334,7 @@ input {
   animation-name: rotate;
   animation-duration: 0.5s;
   animation-delay: 0.3s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out forwards;
   animation-fill-mode: both;
   transform-origin: 50% 50%;
 }
@@ -345,17 +345,17 @@ input {
   }
   0% {
     opacity: 0;
-    transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, 0, 0);
   }
   60% {
     opacity: 1;
-    transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 0, 0);
   }
   75% {
-    transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, 0, 0);
   }
   90% {
-    transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 0, 0);
   }
   to {
     opacity: 1;

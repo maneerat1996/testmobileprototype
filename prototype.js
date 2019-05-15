@@ -9,7 +9,7 @@ btn.onclick = function() {
     var password = document.getElementById("password").value;
 
  if(password==""){
-    alert('กรุณกรอกข้อมูลให้ครบ');
+    console.log("xsd");
  }else{
     if(username=="01"){
         ModalLoading.style.display = "block";

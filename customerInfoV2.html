@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>customerInfoV2</title>
+    <link rel="stylesheet" href="customerInfoV2.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Assistant');
+</style>
+
+<body>
+
+    <!--header Logo AIS-->
+    <div class="header">
+        <div class="headerSub1">
+            <img src="/assets/image/logo AIS/png_graphic_1062071.png" id="backGround">
+            <img src="/assets/image/logo AIS/Advanc_logo.png" id="logo">
+        </div>
+        <div class="headerSub2">
+            <div class="infoUser">
+                <div id="text1">
+                    <div class="h2">USER : </div>
+                    <div class="h2">BROWSER : </div>
+                    <div class="h2">NETWORK : </div>
+                </div>
+                <div id="text2">
+                    <div id="textUser">157425846</div>
+                    <div id="textBrowser">FIREFOX</div>
+                    <div id="textNetwork">500 Mbps</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Show Tel-->
+    <div class="header2">
+        <p id="textPhone">087-544-3399</p>
+    </div>
+
+    <div class="container">
+
+        <!--Customer Picture-->
+        <div class="containerPicture">
+            <div id="boxpicture">
+                <img id="PictureCustomer" src="/assets/image/icon - Customer/MetroUI-Apps-Windows8-Photos-icon.png" id="logo">
+            </div>
+            <div id="textCustomer">
+                <p class="Customer"> Customer Info</p>
+            </div>
+            <div id="boxVDO">
+                <p class="textVDO">Chat/VDO Call</p>
+            </div>
+            <div class="textWhite">
+            </div>
+            <div class="textWhite">
+            </div>
+        </div>
+
+        <div class="textHead">Customer Info</div>
+
+        <!--Customer Info-->
+        <div class="containerInfo">
+            <!--NETWORK-->
+            <div class="grid-item">
+                <div class="boxInfo1">
+                    <img class="img1" src="/assets/image/icon - network/rss-flat.png">
+                    <div class="infoText">Network</div>
+                </div>
+                <div class="boxInfo2">
+                    <div id="textNetwork2">1,000 Mbps</div>
+                </div>
+            </div>
+
+
+
+            <!--Browser-->
+            <div class="grid-item">
+                <div class="boxInfo1">
+                    <img class="img1" src="/assets/image/icon - browser/iconfinder_browser_1055104.png">
+                    <div class="infoText">Browser</div>
+                </div>
+                <div class="boxInfo2">
+                    <div id="textBrowser2">Firefox</div>
+                </div>
+            </div>
+
+            <!--Online-->
+            <div class="grid-item">
+                <div class="boxInfo1">
+                    <img class="img1" src="/assets/image/icon - status/addressbook-icon.png">
+                    <div class="infoText">Status</div>
+                </div>
+                <div class="boxInfo2">
+                    <div id="textStatus2">Online</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="textHead2">Customer Profile</div>
+
+        <!--Customer Profile-->
+        <div class="containerProfile">
+            <div class="boxProfile1">
+                <div class="boxProfile1Sub1">
+                    <div id="boxProfile">
+                        <p class="textProfile">Name</p>
+                    </div>
+                    <div id="boxProfile">
+                        <p class="textProfile">Mobile</p>
+                    </div>
+                    <div id="boxProfile">
+                        <p class="textProfile">ID Card</p>
+                    </div>
+                    <div id="boxProfile">
+                        <p class="textProfile">Birthday</p>
+                    </div>
+                    <div id="boxProfile">
+                        <p class="textProfile">Email Address</p>
+                    </div>
+                </div>
+                <div class="boxProfile1Sub2">
+                    <input id="Name" type="text" readonly>
+                    <input id="Mobile" type="text" readonly>
+                    <input id="IdCard" type="text" readonly>
+                    <input id="Birthday" type="text" readonly>
+                    <input id="EmailAddress" type="text" readonly>
+                </div>
+            </div>
+
+            <div class="boxProfile2">
+                <div class="boxProfile2Sub1">
+                    <div id="boxProfile">
+                        <p class="textProfile">Address</p>
+                    </div>
+                </div>
+
+                <div class="boxProfile2Sub2">
+                    <input id="Address" style="word-wrap: break-word;" type="text">
+                    <input id="bottonSave" size="30" type="submit" value="SAVE" style="text-align:center;font-style: inherit" background-color="#FFFFF">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="customerInfoV2.js"></script>
+
+</body>
+
+</html>
