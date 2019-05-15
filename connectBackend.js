@@ -69,11 +69,11 @@ function sipRegister() {
     ua.start();
 
 
-    ua.on('connecting', function() {
+    ua.on('connecting', function(e) {
         console.log('UA "connecting" event');
     });
 
-    ua.on('connected', function() {
+    ua.on('connected', function(e) {
         console.log('UA "connected" event');
         console.log(username);
         console.log(password);
@@ -82,7 +82,7 @@ function sipRegister() {
         ua.register();
     });
 
-    ua.on('registered', function() {
+    ua.on('registered', function(e) {
         console.log('UA "registered" event');
         // txtRegStatus.innerHTML = '<i>Registered</i>';
         console.log(e);
