@@ -28,6 +28,11 @@ h1{
   margin: 0px 5px 0px 0px;
 }
 
+.logoAis{
+  width: 194px;
+  height: 70px;
+}
+
 .iconPage{
   border-radius: 0%;
   max-width: 100%; 
@@ -455,7 +460,7 @@ input {
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 450px){
   body {
     margin: 50px 50px 0px 10px;
   }
@@ -478,7 +483,8 @@ input {
   }
 
   .main{
-      display: grid;    
+      display: grid;  
+      margin-left: 10px;  
       grid-template-areas: 
       "username"
       "password"
@@ -521,6 +527,22 @@ input {
     grid-template-columns: 25% 75%;
   }
 
+  #user_error{
+    color: red; 
+    display: block; 
+    font-size: 12px;
+    font-family: Assistant;
+    margin: 10px 0px -15px 10px;
+  }
+  
+  #password_error{
+    color: red; 
+    display: block; 
+    font-size: 12px;
+    font-family: Assistant;
+    margin: 10px 0px -15px 10px;
+  }
+
   .btn{
     grid-area: btn;
     text-align: center;
@@ -555,21 +577,21 @@ input {
   .btnLogin {
     margin: 0px 0px 0px 70px;
     max-width: 100%; 
-    width: 200px;
-    height: 44px;
+    width: 190px;
+    height: 41px;
     border-color: #ffffff;
     background-color: #cdef62;
   }
 
   .loginSuccess {
     max-width: 100%; 
-    font-size: 150%;
+    font-size: 120%;
     font-weight: bold;
     color: #ffffff;
     background-color: #32A432;
     border-radius: 4px;
     text-align: center;
-    padding:8px 70PX; 
+    padding:8px 40PX; 
     font-family: assistant;
   }
 
@@ -606,6 +628,219 @@ input {
     height: 64px;
     margin: 30px 0px 0px 0px;
   }
+
+  .p1 {
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+    color: #616161;
+    font-family: Assistant;
+  }
+
+  .p2 {
+    font-size: 20px;
+    color: #616161;
+    font-family: Assistant;
+    text-align: center;
+    margin: 140px 0px 0px 0px;
+  }
+
+  .p3 {
+    font-size: 15px;
+    color: #616161;
+    font-family: Assistant;
+    text-align: center;
+    margin: -1px 0px 0px 0px;
+  }
+}
+
+
+@media (max-width: 380px){
+
+  body {
+    margin: 30px 50px 0px 20px;
+  }
+
+  .logoAis{
+    width: 154px;
+    height: 50px;
+  }
+
+  .lock{
+    border-radius: 10%;
+    width: 27px;
+    height: 31px;
+    max-width: 100%;
+  }
+
+  .textmember{
+    text-align: left;
+    font-family: Assistant;
+    font-size: 29px
+  }
+
+  .inputText{
+    text-align: left;
+    width: 300px;
+    height: 50px;
+    margin: 5px;
+  }
+
+  #user_error{
+    color: red; 
+    display: block; 
+    font-size: 12px;
+    font-family: Assistant;
+    margin: 10px 0px -15px 10px;
+  }
+  
+  #password_error{
+    color: red; 
+    display: block; 
+    font-size: 12px;
+    font-family: Assistant;
+    margin: 10px 0px -15px 10px;
+  }
+
+  .btnLogin {
+    margin: 0px 0px 0px 70px;
+    max-width: 100%; 
+    width: 160px;
+    height: 39px;
+    border-color: #ffffff;
+    background-color: #cdef62;
+  }
+
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: 30px 0px 0px -30px;
+  }
+
+
+  .container {
+    display: grid;
+    height: 30vh;
+    margin: 50px 0px 0px 0px;
+    grid-gap: -10px;
+    grid-template-areas: 
+    "b"
+  } 
+
+  .boxA{
+    display: none;
+  }
+
+  .boxB{
+      grid-area: b;
+  }
+
+  .main{
+      display: grid;  
+      margin-left: 10px;  
+      grid-template-areas: 
+      "username"
+      "password"
+      "btn"
+  }
+
+  .header{
+    display: none;
+  }
+  .boxA{
+    display: none;
+  }
+  .iconPage{
+    display: none;
+  }
+  .imgIcon{
+    display: none;
+  }
+  .HeaderMember{
+    display: none;
+  }
+  .space{
+    display: none;
+  }
+
+  .headerMobile{
+    display: block;
+  }
+
+  .logoMobile{
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+
+  
+
+  .btn{
+    grid-area: btn;
+    text-align: center;
+    max-width: 100%;
+    margin: 10px 0px 0px -35px;
+  }
+
+ 
+
+ 
+
+  input {
+    margin: 0;
+    max-width: 100%; 
+    width: 355px;
+    height: 44px;
+    font-size: 100%;
+    border-color: #e6e6e6;
+    border-radius: 10px; 
+  }
+
+ 
+
+  .loginSuccess {
+    max-width: 100%; 
+    font-size: 120%;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #32A432;
+    border-radius: 4px;
+    text-align: center;
+    padding:8px 40PX; 
+    font-family: assistant;
+  }
+
+  .modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 25px;
+    width: 300px;
+    height: 350px;
+    opacity: 0.8;
+    filter: alpha(opacity=40);
+  }
+
+  .svg-icon-success.is-animated,
+  .svg-icon-error.is-animated {
+    animation-name: bounceInDown;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    margin: 100px 0px 0px 10px;
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: -15px;
+  }
+
+ 
 
   .p1 {
     font-size: 30px;

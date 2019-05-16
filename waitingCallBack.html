@@ -73,8 +73,10 @@
                         <div id="textBrowser4">Online</div>
                     </div>
                 </div>
+                
 
         </div>
+
 
         <button class="open-button" onclick="openForm()">Chat (offline)</button>
 
@@ -90,10 +92,36 @@
         </form>
         </div>
 
-    </div>
 
+        
+    </div>
+    <div>
+        <button id="buttonCall" class="buttonCalling" onclick="calling()"> Calling </button>
+
+        <div id="PopUpCalling" class="PopUpCalling">
+                <div class="contentPopUp">
+                   <div>
+                       <img class="profileCall" src="./assets/image/bxkyPkxX-removebg.png" >
+                   </div>
+                   <div class="profileName">
+                       <h3>
+                           Callcenter AIS
+                       </h3>
+                   </div>
+                   <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                   <div class="btnCall">
+                       <div class="answer">
+                            <img style="width: 80px;height: 80px;" src="./assets/image/VDO Call.png" onclick="VDOcall()">
+                       </div>
+
+                       <div class="cancle">
+                           <img style="width: 80px;height: 80px;" src="./assets/image/End Call.png" onclick="EndCall()">
+                        </div>
+                   </div>
+                </div>
+            </div>
+    </div>
 </body>
-   
-<script src="popupchat.js"></script>
+<script src="popupchatAndcalling.js"></script>
 
 </html>

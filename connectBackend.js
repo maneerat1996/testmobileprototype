@@ -1,8 +1,12 @@
+var timer;
+
 var btn = document.getElementById("myBtn");
 var closeLoading = document.getElementsByClassName("close")[0];
 var closeSuccess = document.getElementsByClassName("close2")[0];
+
 var user_error = document.getElementById('user_error');
 var password_error = document.getElementById('password_error');
+
 
 function getBrowser() {
     if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
@@ -20,6 +24,7 @@ function getBrowser() {
         return "unknown";
     }
 }
+
 console.log(getBrowser());
 
 function sipRegister() {
@@ -36,6 +41,7 @@ function sipRegister() {
 
     if(username=="" ){
         console.log('123user');
+        
         user_error.style.display = 'block';
         user_error.textContent = "ชื่อผู้ใช้ไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง";
     }
@@ -68,18 +74,17 @@ function sipRegister() {
     var ua = new PhoneJs.UA(configuration);
     ua.start();
 
-
     ua.on('connecting', function(e) {
         console.log('UA "connecting" event');
     });
 
     ua.on('connected', function(e) {
         console.log('UA "connected" event');
-        console.log(username);
-        console.log(password);
+        console.log(username + password);
         ModalLoading.style.display = "block";
-        endAndStartTimer();
+
         ua.register();
+        endAndStartTimer();
     });
 
     ua.on('registered', function(e) {
@@ -88,19 +93,19 @@ function sipRegister() {
         console.log(e);
         console.log(e.response.call_id);
         console.log(e.response.status_code);
+
         if ("200" == e.response.status_code) {
             // window.alert(e.response.status_code + " OK");
             // console.log('sip:'+username+'@entro-lab.com:5060')
+  
             ModalLoading.style.display = "none";
             ModalSuccess.style.display = "block";
-            // return false;
-           
-        //    var siteStatus ='http://127.0.0.1:5502/customerStatus.html?'+username+'?'+getBrowser();
-
-        // setTimeout("location.href = "+ "'" + siteStatus + "'" +";",3000);
+     
+            var siteStatus ='http://127.0.0.1:5502/customerStatus.html?'+username+'?'+getBrowser();
+            setTimeout("location.href = "+ "'" + siteStatus + "'" +";",2000);
+        }else{
+            endAndStartTimer();
         }
-
-
     });
 
 }
@@ -144,9 +149,13 @@ btn.addEventListener('click', function(e) {
     });
   });
 
-var timer;
+
 function endAndStartTimer() {
-  window.clearTimeout(timer);
-  timer = window.setTimeout(function(){ModalLoading.style.display = "none",
-  alert('ลงทะเบียนไม่สำเร็จ กรุณาตรวจสอบชื่อผู้ใช้และรหัสผ่านอีกครั้ง')},3000); 
+   
+        window.clearTimeout(timer);
+        timer = window.setTimeout(function(){ModalLoading.style.display = "none",
+        alert('ลงทะเบียนไม่สำเร็จ กรุณาตรวจสอบชื่อผู้ใช้และรหัสผ่านอีกครั้ง')},3000); 
+    
 }
+
+

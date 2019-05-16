@@ -24405,8 +24405,9 @@ if (true) {
 
       case 'iOS':
         if (/OS (\d+)_(\d+)_?(\d+)?/.test(nAgt)) {
-          osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
-          osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
+          // osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
+          // osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
+          osVersion = 'Unknown iOS';
         }
 
         break;
